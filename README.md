@@ -18,7 +18,7 @@ This repository provides the API and a simple web UI for managing clients, appli
 
 ## Prerequisites
 
-- Python 3.11+ (recommended)
+- Python 3.11+ 
 - Node.js 18+ and npm/yarn
 - A database supported by SQLAlchemy (set via `DATABASE_URL`)
 
@@ -70,7 +70,7 @@ Open the frontend dev server (Vite) in your browser (usually http://localhost:51
 
 ## Development notes
 
-- API origin is allowed for `http://localhost:5173` in the backend CORS config (adjust as needed).
+- API origin is allowed for `http://localhost:----` in the backend CORS config (adjust as needed).
 - Backend routes are registered under `loan_system_backend/app/routes/`.
 - Frontend source is under `loan-system-frontend/src/`.
 

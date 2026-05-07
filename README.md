@@ -1,7 +1,4 @@
-﻿# Loan System
-
-Monorepo containing the Loan System backend and frontend applications.
-
+﻿
 ## Overview
 
 - **Backend:** Sanic-based API (Python) located in `loan_system_backend/`.
@@ -20,27 +17,9 @@ This repository provides the API and a simple web UI for managing clients, appli
 
 - Python 3.11+ 
 - Node.js 18+ and npm/yarn
-- A database supported by SQLAlchemy (set via `DATABASE_URL`)
+- A database supported by SQLAlchemy 
 
-## Environment variables
 
-The backend loads environment variables (via python-dotenv if present). Important vars include:
-
-- `APP_HOST` — backend host (default `0.0.0.0`)
-- `APP_PORT` — backend port (default `9000`)
-- `DATABASE_URL` — database connection URL (required)
-- `SCORING_API_BASE` — scoring service base URL (default `http://localhost:8000`)
-- `JWT_SECRET` — JWT signing secret (default `change_me`)
-- `JWT_ALG` — JWT algorithm (default `HS256`)
-- `JWT_EXPIRE_MIN` — JWT expiry in minutes (default `480`)
-- `ADMIN_BOOTSTRAP_KEY` — optional bootstrap admin key
-
-Create a `.env` file in `loan_system_backend/` with the values you need, for example:
-
-```
-DATABASE_URL=postgresql+asyncpg://user:pass@localhost:5432/loans
-JWT_SECRET=supersecret
-APP_PORT=9000
 ```
 
 ## Setup & Run
